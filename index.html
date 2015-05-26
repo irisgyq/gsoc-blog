@@ -39,17 +39,16 @@ title: The latest articles...
         </div>
         <span class="blc"></span><span class="trc"></span>
         </div>
-
-
->
 　　<h2>{{ page.title }}</h2>
 　　<ul>
-  　　　　{% for post in site.posts %}
-  　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-  　　　　{% endfor %}
+  　　　{% for post in site.posts %}
+  　　　 　<li>{{ post.date | date_to_string }}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  　　　{% endfor %}
   　　</ul>
       </div>
     </div>
+  </div>
+  </div>
     <footer>
       <div class="owner">
       <p><a href="https://github.com/irisgyq" class="avatar"><img src="https://avatars0.githubusercontent.com/u/8121488?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/irisgyq">irisgyq</a> maintains <a href="https://github.com/irisgyq/gsoc-blog">My trip of 2015 Google Summer of Code</a></p>
